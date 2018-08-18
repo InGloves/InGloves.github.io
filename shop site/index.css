@@ -1,0 +1,76 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	background-image: url('images/patt.png');
+}
+header {
+	width: 1920px;
+	height: 100px;
+	background-color: rgba(255, 255, 255, 0.75)
+}
+.container {
+	width: 1170px;
+	margin: 0 auto;
+}
+[class*="col-"] {   /*ищет все значения после * и задает им стиль*/
+	float: left;
+}
+.col-md-3 {
+	margin-top: 34px;
+	width: 25%;
+}
+.col-md-6 {
+	width: 50%;
+
+}
+.row:after {    /* обязательно прописовать родительскому елементу если дочернему задается флоат віравнивание по левому краю*/
+	content: "";
+	clear: both;
+	display: block;
+}
+.blocks {
+	float: left;
+	border-left: solid 1px #2c71b8;
+	min-width: 145px;
+	margin-top:25px;
+	line-height: 50px;
+	color: #2c71b8;
+	text-align: center;
+}
+.blocks:hover {
+	background-color: white;
+	color: #2c71b8;
+
+}
+.link {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+}
+
+#search{
+	margin-left: 30px; 
+    border: solid 1px #2c71b8; /* Убираем рамку */
+    outline: none; /* Убираем свечение в Chrome и Safari */
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    width: 200px; /* Ширина поля */
+    height: 40px;
+    background-color: rgba(202, 219, 237, 0);
+    text-align:10px;
+    padding-left: 19px;
+    color: #2c71b8;
+    align-self: left;
+}
+#last{
+	width: 40px;
+	background: white;
+	position: relative; /* Относительное позиционирование */
+    top: -40px;
+    left: 252px;
+    text-align: center;
+	padding-top: 10px;
+	padding-bottom: 8px;
+
+}
+[class*="blocks" Home4] {
+	border-right: solid 1px #2c71b8;
+}
